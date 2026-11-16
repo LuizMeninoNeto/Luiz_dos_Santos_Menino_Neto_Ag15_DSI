@@ -1,0 +1,33 @@
+/* Rolagem suave ao clicar nos links do menu */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animação nos Cards de Projeto (Recurso Novo) */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Animação nos quadros de Habilidades (Recurso Novo) */
+.skill-box {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    background-color: #f8f9fa !important;
+}
+
+/* Ajuste para o menu fixo não cobrir os títulos das seções */
+section {
+    scroll-margin-top: 70px;
+}
